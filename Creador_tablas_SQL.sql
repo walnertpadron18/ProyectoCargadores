@@ -46,7 +46,7 @@ CREATE TABLE poblacion (
     iso3 CHAR(3) NOT NULL,
     año INT NOT NULL,
     poblacion INT,
-    PRIMARY KEY (iso3, anio),
+    PRIMARY KEY (iso3, año),
     FOREIGN KEY (iso3) REFERENCES paises(iso3)
 );
 
